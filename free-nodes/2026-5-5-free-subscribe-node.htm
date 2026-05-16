@@ -273,9 +273,9 @@ A4：可能是DNS问题，尝试切换DNS服务器或启用客户端内置DNS解
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>V2RayN 订阅更新后节点重复如何清理？</h5></div>
+    <div class="panel-heading"><h5>Potatso Lite 是否支持手动节点管理？</h5></div>
     <div class="panel-body">
-        V2RayN 在导入订阅时有时会产生重复节点，可以点击右键菜单选择“删除重复项”。若仍存在旧节点缓存，可清空配置文件夹内的 history.json 并重新导入订阅，保证节点列表整洁。<hr />    </div>
+        支持。用户可手动输入节点信息或扫描二维码导入节点，并可进行修改或删除。虽然不支持自动订阅更新，但足以满足轻量用户对节点管理和流量分流的需求。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 的协议参数如何提高抗封锁能力？</h5></div>
@@ -283,9 +283,9 @@ A4：可能是DNS问题，尝试切换DNS服务器或启用客户端内置DNS解
         SSR 的协议参数可以模拟不同流量特征，使加密流量更像普通 HTTP 或 HTTPS。合理选择协议类型和混淆参数，可以有效降低被封锁的风险，提高节点长期可用性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Mihomo 节点分组如何提升访问效率？</h5></div>
+    <div class="panel-heading"><h5>SSR 的混淆方式选择有什么讲究？</h5></div>
     <div class="panel-body">
-        节点可按延迟、地区或用途分组，结合策略组实现自动分流。快速选择最优节点，可提高网页、视频和游戏访问速度，同时优化节点管理和维护效率，提升整体网络体验。<hr />    </div>
+        混淆方式决定流量伪装特性，不同方式适应不同封锁环境。常用方式如 tls1.2_ticket_auth 模拟 HTTPS，http_simple 模拟 HTTP 请求，根据环境选择可提高抗封锁能力。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Hiddify Next 如何实现用户流量分配？</h5></div>
@@ -298,19 +298,9 @@ A4：可能是DNS问题，尝试切换DNS服务器或启用客户端内置DNS解
         协议插件可隐藏真实通信特征，将流量伪装成正常 HTTP 或 TLS 数据。结合混淆方式使用，可以有效降低被 DPI 检测或封锁的风险，提高节点稳定性和长期可用性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 的多策略组设置能提高访问效率吗？</h5></div>
+    <div class="panel-heading"><h5>Mihomo 节点分组如何提升访问效率？</h5></div>
     <div class="panel-body">
-        多策略组可以将节点按用途、延迟或地域分类，结合规则文件自动分流不同流量。这样可以确保游戏、视频或网页流量走最优节点，提高整体访问效率和稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Potatso Lite 是否支持手动节点管理？</h5></div>
-    <div class="panel-body">
-        支持。用户可手动输入节点信息或扫描二维码导入节点，并可进行修改或删除。虽然不支持自动订阅更新，但足以满足轻量用户对节点管理和流量分流的需求。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>PassWall2 如何结合节点测速优化策略组？</h5></div>
-    <div class="panel-body">
-        PassWall2 会定期测速节点延迟和丢包率，并根据策略组自动选择最优节点。通过测速和自动切换，可保证网页、视频和游戏流量走低延迟节点，提升整体网络体验。<hr />    </div>
+        节点可按延迟、地区或用途分组，结合策略组实现自动分流。快速选择最优节点，可提高网页、视频和游戏访问速度，同时优化节点管理和维护效率，提升整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>V2Ray 的 TCP + TLS 模式适合什么场景？</h5></div>
@@ -318,9 +308,19 @@ A4：可能是DNS问题，尝试切换DNS服务器或启用客户端内置DNS解
         TCP + TLS 模式可模拟 HTTPS 流量，增强抗封锁能力。适合网络封锁严格的环境，通过策略组选择最佳节点，可保证访问速度和连接稳定性，尤其适用于网页浏览和视频播放。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 的混淆方式选择有什么讲究？</h5></div>
+    <div class="panel-heading"><h5>WinXray 的多策略组设置能提高访问效率吗？</h5></div>
     <div class="panel-body">
-        混淆方式决定流量伪装特性，不同方式适应不同封锁环境。常用方式如 tls1.2_ticket_auth 模拟 HTTPS，http_simple 模拟 HTTP 请求，根据环境选择可提高抗封锁能力。    </div>
+        多策略组可以将节点按用途、延迟或地域分类，结合规则文件自动分流不同流量。这样可以确保游戏、视频或网页流量走最优节点，提高整体访问效率和稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>V2RayN 订阅更新后节点重复如何清理？</h5></div>
+    <div class="panel-body">
+        V2RayN 在导入订阅时有时会产生重复节点，可以点击右键菜单选择“删除重复项”。若仍存在旧节点缓存，可清空配置文件夹内的 history.json 并重新导入订阅，保证节点列表整洁。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>PassWall2 如何结合节点测速优化策略组？</h5></div>
+    <div class="panel-body">
+        PassWall2 会定期测速节点延迟和丢包率，并根据策略组自动选择最优节点。通过测速和自动切换，可保证网页、视频和游戏流量走低延迟节点，提升整体网络体验。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -349,16 +349,16 @@ A4：可能是DNS问题，尝试切换DNS服务器或启用客户端内置DNS解
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-4-20-free-subscribe-node.htm" title="麦Clash - 4月20日21.4M/S|免费SSR节点/V2ray节点/Clash节点/Trojan节点/Shadowrocket节点/Singbox节点节点推荐，Clash机场购买推荐">麦Clash - 4月20日21.4M/S|免费SSR节点/V2ray节点/Clash节点/Trojan节点/Shadowrocket节点/Singbox节点节点推荐，Clash机场购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-5-free-subscribe-node.htm" title="麦Clash - 5月5日22.9M/S|免费Trojan节点/Singbox节点/SSR节点/Shadowrocket节点/Clash节点/V2ray节点节点推荐，Clash机场购买推荐">麦Clash - 5月5日22.9M/S|免费Trojan节点/Singbox节点/SSR节点/Shadowrocket节点/Clash节点/V2ray节点节点推荐，Clash机场购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-29-free-node-subscribe-links.htm" title="麦Clash - 4月29日19M/S|免费Clash节点/SSR节点/V2ray节点/Trojan节点/Singbox节点/Shadowrocket节点节点推荐，Clash机场购买推荐">麦Clash - 4月29日19M/S|免费Clash节点/SSR节点/V2ray节点/Trojan节点/Singbox节点/Shadowrocket节点节点推荐，Clash机场购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-27-free-node-subscribe.htm" title="麦Clash - 4月27日18.5M/S|免费Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Clash节点/Trojan节点节点推荐，Clash机场购买推荐">麦Clash - 4月27日18.5M/S|免费Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Clash节点/Trojan节点节点推荐，Clash机场购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-25-free-v2ray-subscribe.htm" title="麦Clash - 4月25日21.4M/S|免费V2ray节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点/SSR节点节点推荐，Clash机场购买推荐">麦Clash - 4月25日21.4M/S|免费V2ray节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点/SSR节点节点推荐，Clash机场购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-13-free-node-subscribe.htm" title="麦Clash - 4月13日20.8M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Clash节点/Trojan节点节点推荐，Clash机场购买推荐">麦Clash - 4月13日20.8M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Clash节点/Trojan节点节点推荐，Clash机场购买推荐</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-5-2-node-share.htm" title="麦Clash - 5月2日21.7M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/SSR节点/Trojan节点/Clash节点节点推荐，Clash机场购买推荐">麦Clash - 5月2日21.7M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/SSR节点/Trojan节点/Clash节点节点推荐，Clash机场购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-1-free-node-subscribe.htm" title="麦Clash - 5月1日22.3M/S|免费Singbox节点/Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点节点推荐，Clash机场购买推荐">麦Clash - 5月1日22.3M/S|免费Singbox节点/Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点节点推荐，Clash机场购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-3-node-share.htm" title="麦Clash - 5月3日18.8M/S|免费Clash节点/Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点/SSR节点节点推荐，Clash机场购买推荐">麦Clash - 5月3日18.8M/S|免费Clash节点/Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点/SSR节点节点推荐，Clash机场购买推荐</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-5-8-free-subscribe-node.htm" title="麦Clash - 5月8日18.4M/S|免费Singbox节点/Trojan节点/V2ray节点/SSR节点/Clash节点/Shadowrocket节点节点推荐，Clash机场购买推荐">麦Clash - 5月8日18.4M/S|免费Singbox节点/Trojan节点/V2ray节点/SSR节点/Clash节点/Shadowrocket节点节点推荐，Clash机场购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-22-free-high-speed-nodes.htm" title="麦Clash - 4月22日19.7M/S|免费Trojan节点/Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点节点推荐，Clash机场购买推荐">麦Clash - 4月22日19.7M/S|免费Trojan节点/Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点节点推荐，Clash机场购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-23-free-node-subscribe.htm" title="麦Clash - 4月23日18M/S|免费Clash节点/V2ray节点/Shadowrocket节点/SSR节点/Singbox节点/Trojan节点节点推荐，Clash机场购买推荐">麦Clash - 4月23日18M/S|免费Clash节点/V2ray节点/Shadowrocket节点/SSR节点/Singbox节点/Trojan节点节点推荐，Clash机场购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-10-free-v2ray.htm" title="麦Clash - 4月10日21.4M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Singbox节点/Clash节点/Trojan节点节点推荐，Clash机场购买推荐">麦Clash - 4月10日21.4M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Singbox节点/Clash节点/Trojan节点节点推荐，Clash机场购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-18-clash-v2ray-ss-ssr.htm" title="麦Clash - 4月18日18.3M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Trojan节点/Clash节点/V2ray节点节点推荐，Clash机场购买推荐">麦Clash - 4月18日18.3M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Trojan节点/Clash节点/V2ray节点节点推荐，Clash机场购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-11-node-share-links.htm" title="麦Clash - 5月11日19.2M/S|免费Singbox节点/Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点节点推荐，Clash机场购买推荐">麦Clash - 5月11日19.2M/S|免费Singbox节点/Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点节点推荐，Clash机场购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-12-free-node-subscribe-links.htm" title="麦Clash - 4月12日19.5M/S|免费Clash节点/SSR节点/V2ray节点/Trojan节点/Shadowrocket节点/Singbox节点节点推荐，Clash机场购买推荐">麦Clash - 4月12日19.5M/S|免费Clash节点/SSR节点/V2ray节点/Trojan节点/Shadowrocket节点/Singbox节点节点推荐，Clash机场购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-16-free-v2ray-subscribe.htm" title="麦Clash - 4月16日21.8M/S|免费Trojan节点/Singbox节点/V2ray节点/SSR节点/Clash节点/Shadowrocket节点节点推荐，Clash机场购买推荐">麦Clash - 4月16日21.8M/S|免费Trojan节点/Singbox节点/V2ray节点/SSR节点/Clash节点/Shadowrocket节点节点推荐，Clash机场购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-26-free-v2ray.htm" title="麦Clash - 4月26日22.7M/S|免费Shadowrocket节点/Clash节点/V2ray节点/SSR节点/Trojan节点/Singbox节点节点推荐，Clash机场购买推荐">麦Clash - 4月26日22.7M/S|免费Shadowrocket节点/Clash节点/V2ray节点/SSR节点/Trojan节点/Singbox节点节点推荐，Clash机场购买推荐</a></li>
                     </ul>
     </div>
 </div>
@@ -370,10 +370,10 @@ A4：可能是DNS问题，尝试切换DNS服务器或启用客户端内置DNS解
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">9</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
+                <h4><span class="badge" style="float: right;">11</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">22</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
+                <h4><span class="badge" style="float: right;">19</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
             </li>
                     </ul>
     </div>
