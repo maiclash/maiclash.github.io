@@ -1,4 +1,4 @@
-# 麦Clash - 5月23日18.5M/S|免费Clash节点/V2ray节点/Shadowrocket节点/Singbox节点/SSR节点节点推荐，Clash机场购买推荐  更新时间 2026-05-23 09:45:54
+# 麦Clash - 5月30日21.2M/S|免费SSR节点/Clash节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，Clash机场购买推荐  更新时间 2026-05-30 10:30:48
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://maiclash.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://maiclash.github.io/uploads/2026/05/0-20260523.yaml
-- https://maiclash.github.io/uploads/2026/05/1-20260523.yaml
-- https://maiclash.github.io/uploads/2026/05/2-20260523.yaml
-- https://maiclash.github.io/uploads/2026/05/3-20260523.yaml
-- https://maiclash.github.io/uploads/2026/05/4-20260523.yaml
+- https://maiclash.github.io/uploads/2026/05/0-20260530.yaml
+- https://maiclash.github.io/uploads/2026/05/1-20260530.yaml
+- https://maiclash.github.io/uploads/2026/05/2-20260530.yaml
+- https://maiclash.github.io/uploads/2026/05/3-20260530.yaml
+- https://maiclash.github.io/uploads/2026/05/4-20260530.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://maiclash.github.io/uploads/2026/05/0-20260523.txt
-- https://maiclash.github.io/uploads/2026/05/1-20260523.txt
-- https://maiclash.github.io/uploads/2026/05/2-20260523.txt
-- https://maiclash.github.io/uploads/2026/05/3-20260523.txt
-- https://maiclash.github.io/uploads/2026/05/4-20260523.txt
+- https://maiclash.github.io/uploads/2026/05/0-20260530.txt
+- https://maiclash.github.io/uploads/2026/05/1-20260530.txt
+- https://maiclash.github.io/uploads/2026/05/2-20260530.txt
+- https://maiclash.github.io/uploads/2026/05/3-20260530.txt
+- https://maiclash.github.io/uploads/2026/05/4-20260530.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://maiclash.github.io/uploads/2026/05/20260523.json
+- https://maiclash.github.io/uploads/2026/05/20260530.json
 
 ## 更多Clash节点订阅 ：
 
