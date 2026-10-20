@@ -357,9 +357,19 @@ Clash Meta 是基于 Meta 核心的升级版，支持更多协议、性能优化
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 节点健康检测如何提升网络体验？</h5></div>
+    <div class="panel-heading"><h5>VMess 使用 AEAD 加密的优势是什么？</h5></div>
     <div class="panel-body">
-        WinXray 会定期检测节点延迟和丢包率，并结合策略组自动切换到最优节点。避免高延迟或失效节点，提高网页浏览、视频播放和游戏连接的稳定性和速度。<hr />    </div>
+        AEAD 加密提供更强的安全性和抗重放攻击能力，同时隐藏流量特征，降低被 DPI 检测风险。在高封锁环境下使用，可提升连接稳定性和长期可用性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hiddify Next 是否兼容 Clash 或 V2Ray 配置文件？</h5></div>
+    <div class="panel-body">
+        Hiddify Next 支持部分 Clash 与 Xray 订阅格式，但建议使用其官方订阅格式以获得完整兼容。若订阅转换异常，可使用 Hiddify 提供的在线转换工具重新生成配置文件导入。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VLESS + XTLS 如何在高延迟网络中优化连接？</h5></div>
+    <div class="panel-body">
+        XTLS 模式通过减少握手和加密开销降低延迟。结合策略组和多节点切换，可在高延迟或不稳定网络环境下保证网页浏览、视频播放和游戏连接稳定，提高整体体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 协议和混淆组合如何优化稳定性？</h5></div>
@@ -372,24 +382,14 @@ Clash Meta 是基于 Meta 核心的升级版，支持更多协议、性能优化
         节点可按地区、延迟或用途分类，结合策略组实现自动分流。便于管理大量节点，快速选择最优节点，提高访问速度和连接稳定性，同时优化维护效率和网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>QuantumultX 的重写规则可实现哪些功能？</h5></div>
-    <div class="panel-body">
-        QuantumultX 的重写规则支持请求头修改、响应内容修改、广告屏蔽及自动跳转。结合脚本可实现自动签到、流量统计和定制化网络访问，极大增强客户端灵活性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 是否兼容 Clash 或 V2Ray 配置文件？</h5></div>
-    <div class="panel-body">
-        Hiddify Next 支持部分 Clash 与 Xray 订阅格式，但建议使用其官方订阅格式以获得完整兼容。若订阅转换异常，可使用 Hiddify 提供的在线转换工具重新生成配置文件导入。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Trojan-Go 的多路复用（mux）如何开启？</h5></div>
     <div class="panel-body">
         Trojan-Go 在配置文件中通过启用 mux 参数即可实现多路复用。此功能允许多个连接共享同一隧道，减少握手延迟并提升整体传输效率，尤其在移动网络中表现出色。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 如何导入订阅？</h5></div>
+    <div class="panel-heading"><h5>QuantumultX 的重写规则可实现哪些功能？</h5></div>
     <div class="panel-body">
-        在 WinXray 界面中点击“导入订阅”选项，将机场提供的订阅链接粘贴进去。点击更新后，WinXray 会自动下载节点配置并生成列表，用户可手动选择或自动切换延迟最低的节点使用。<hr />    </div>
+        QuantumultX 的重写规则支持请求头修改、响应内容修改、广告屏蔽及自动跳转。结合脚本可实现自动签到、流量统计和定制化网络访问，极大增强客户端灵活性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>VMess 使用 WebSocket 是否有安全优势？</h5></div>
@@ -397,14 +397,14 @@ Clash Meta 是基于 Meta 核心的升级版，支持更多协议、性能优化
         WebSocket 可伪装成普通 HTTP/HTTPS 流量，配合 TLS 加密，可隐藏真实通信特征，提升抗封锁能力。结合策略组使用，可保证访问速度和网络稳定性，同时增加节点安全性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess 使用 AEAD 加密的优势是什么？</h5></div>
+    <div class="panel-heading"><h5>WinXray 如何导入订阅？</h5></div>
     <div class="panel-body">
-        AEAD 加密提供更强的安全性和抗重放攻击能力，同时隐藏流量特征，降低被 DPI 检测风险。在高封锁环境下使用，可提升连接稳定性和长期可用性。<hr />    </div>
+        在 WinXray 界面中点击“导入订阅”选项，将机场提供的订阅链接粘贴进去。点击更新后，WinXray 会自动下载节点配置并生成列表，用户可手动选择或自动切换延迟最低的节点使用。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS + XTLS 如何在高延迟网络中优化连接？</h5></div>
+    <div class="panel-heading"><h5>WinXray 节点健康检测如何提升网络体验？</h5></div>
     <div class="panel-body">
-        XTLS 模式通过减少握手和加密开销降低延迟。结合策略组和多节点切换，可在高延迟或不稳定网络环境下保证网页浏览、视频播放和游戏连接稳定，提高整体体验。    </div>
+        WinXray 会定期检测节点延迟和丢包率，并结合策略组自动切换到最优节点。避免高延迟或失效节点，提高网页浏览、视频播放和游戏连接的稳定性和速度。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -452,16 +452,16 @@ Clash Meta 是基于 Meta 核心的升级版，支持更多协议、性能优化
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-25.htm" title="麦Clash - 9月25日18.5M/S|免费Singbox节点/Clash节点/SSR节点/V2ray节点/Trojan节点/Shadowrocket节点节点推荐，Clash机场购买推荐">麦Clash - 9月25日18.5M/S|免费Singbox节点/Clash节点/SSR节点/V2ray节点/Trojan节点/Shadowrocket节点节点推荐，Clash机场购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-12-free-subscribe-node.htm" title="麦Clash - 9月12日18.1M/S|免费Singbox节点/V2ray节点/Clash节点/Trojan节点/Shadowrocket节点/SSR节点节点推荐，Clash机场购买推荐">麦Clash - 9月12日18.1M/S|免费Singbox节点/V2ray节点/Clash节点/Trojan节点/Shadowrocket节点/SSR节点节点推荐，Clash机场购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-16-free-subscribe-node.htm" title="麦Clash - 9月16日19.4M/S|免费Clash节点/Singbox节点/Shadowrocket节点/SSR节点/Trojan节点/V2ray节点节点推荐，Clash机场购买推荐">麦Clash - 9月16日19.4M/S|免费Clash节点/Singbox节点/Shadowrocket节点/SSR节点/Trojan节点/V2ray节点节点推荐，Clash机场购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-24-free-subscribe-node.htm" title="麦Clash - 9月24日20.5M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Clash节点/Trojan节点节点推荐，Clash机场购买推荐">麦Clash - 9月24日20.5M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Clash节点/Trojan节点节点推荐，Clash机场购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-6-free-high-speed-nodes.htm" title="麦Clash - 9月6日19.9M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/Trojan节点/Clash节点/SSR节点节点推荐，Clash机场购买推荐">麦Clash - 9月6日19.9M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/Trojan节点/Clash节点/SSR节点节点推荐，Clash机场购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-v2ray-ss-ssr-2026-9-27.htm" title="麦Clash - 9月27日19.6M/S|免费Shadowrocket节点/Trojan节点/Clash节点/Singbox节点/SSR节点/V2ray节点节点推荐，Clash机场购买推荐">麦Clash - 9月27日19.6M/S|免费Shadowrocket节点/Trojan节点/Clash节点/Singbox节点/SSR节点/V2ray节点节点推荐，Clash机场购买推荐</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-10-6-free-v2ray-subscribe.htm" title="麦Clash - 10月6日18.5M/S|免费Trojan节点/V2ray节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点节点推荐，Clash机场购买推荐">麦Clash - 10月6日18.5M/S|免费Trojan节点/V2ray节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点节点推荐，Clash机场购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-23.htm" title="麦Clash - 9月23日18.6M/S|免费Shadowrocket节点/SSR节点/Clash节点/Singbox节点/Trojan节点/V2ray节点节点推荐，Clash机场购买推荐">麦Clash - 9月23日18.6M/S|免费Shadowrocket节点/SSR节点/Clash节点/Singbox节点/Trojan节点/V2ray节点节点推荐，Clash机场购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-v2ray-ss-ssr-2026-10-11.htm" title="麦Clash - 10月11日18.6M/S|免费Singbox节点/Trojan节点/SSR节点/V2ray节点/Clash节点/Shadowrocket节点节点推荐，Clash机场购买推荐">麦Clash - 10月11日18.6M/S|免费Singbox节点/Trojan节点/SSR节点/V2ray节点/Clash节点/Shadowrocket节点节点推荐，Clash机场购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-4-free-node-subscribe.htm" title="麦Clash - 9月4日18M/S|免费SSR节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点节点推荐，Clash机场购买推荐">麦Clash - 9月4日18M/S|免费SSR节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点节点推荐，Clash机场购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-20-free-v2ray-subscribe.htm" title="麦Clash - 9月20日19.9M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/Clash节点/Singbox节点/SSR节点节点推荐，Clash机场购买推荐">麦Clash - 9月20日19.9M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/Clash节点/Singbox节点/SSR节点节点推荐，Clash机场购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-v2ray-ss-ssr-2026-9-15.htm" title="麦Clash - 9月15日19M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/V2ray节点/SSR节点/Clash节点节点推荐，Clash机场购买推荐">麦Clash - 9月15日19M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/V2ray节点/SSR节点/Clash节点节点推荐，Clash机场购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-16-free-high-speed-nodes.htm" title="麦Clash - 10月16日20.4M/S|免费Clash节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点/SSR节点节点推荐，Clash机场购买推荐">麦Clash - 10月16日20.4M/S|免费Clash节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点/SSR节点节点推荐，Clash机场购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-10-17.htm" title="麦Clash - 10月17日18.7M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/SSR节点/Clash节点节点推荐，Clash机场购买推荐">麦Clash - 10月17日18.7M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/SSR节点/Clash节点节点推荐，Clash机场购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-v2ray-ss-ssr-2026-10-5.htm" title="麦Clash - 10月5日19.6M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Clash节点节点推荐，Clash机场购买推荐">麦Clash - 10月5日19.6M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Clash节点节点推荐，Clash机场购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-v2ray-2026-10-13.htm" title="麦Clash - 10月13日19.5M/S|免费Trojan节点/SSR节点/Shadowrocket节点/Singbox节点/V2ray节点/Clash节点节点推荐，Clash机场购买推荐">麦Clash - 10月13日19.5M/S|免费Trojan节点/SSR节点/Shadowrocket节点/Singbox节点/V2ray节点/Clash节点节点推荐，Clash机场购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-2-free-v2ray-subscribe.htm" title="麦Clash - 10月2日20M/S|免费SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点节点推荐，Clash机场购买推荐">麦Clash - 10月2日20M/S|免费SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点节点推荐，Clash机场购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-v2ray-2026-10-3.htm" title="麦Clash - 10月3日21.9M/S|免费Clash节点/SSR节点/V2ray节点/Trojan节点/Singbox节点/Shadowrocket节点节点推荐，Clash机场购买推荐">麦Clash - 10月3日21.9M/S|免费Clash节点/SSR节点/V2ray节点/Trojan节点/Singbox节点/Shadowrocket节点节点推荐，Clash机场购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-v2ray-ss-ssr-2026-10-1.htm" title="麦Clash - 10月1日21.5M/S|免费Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Trojan节点节点推荐，Clash机场购买推荐">麦Clash - 10月1日21.5M/S|免费Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Trojan节点节点推荐，Clash机场购买推荐</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -473,7 +473,7 @@ Clash Meta 是基于 Meta 核心的升级版，支持更多协议、性能优化
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">12</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
+                <h4><span class="badge" style="float: right;">19</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
